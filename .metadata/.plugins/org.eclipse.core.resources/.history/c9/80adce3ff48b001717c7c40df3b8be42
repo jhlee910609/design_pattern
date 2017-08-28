@@ -1,0 +1,14 @@
+package builder;
+
+import builder.Product.ProductBuilder;
+
+public class BasicBuilder {
+
+	public static void main(String[] args) {
+		ProductBuilder builder = new ProductBuilder("코카콜라", 2000);
+		Product product = builder.setStatus(true).build();
+		product.toString();
+	}
+}
+
+
